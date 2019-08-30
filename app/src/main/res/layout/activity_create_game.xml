@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:theme="@style/Theme.MaterialComponents.NoActionBar"
+    tools:context=".CreateGameActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nickText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/colorTitle"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nickname"
+            android:textColor="@color/colorTitle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/create_game"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorTitle"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/nickname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorTitle"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nickText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nickText" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/roundTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/roundTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/nickText"
+        app:np_textColor="@color/colorTitleDark"
+        app:np_selectedTextColor="@color/colorTitle"
+        app:np_lineSpacingMultiplier="15"
+        app:np_max="720"
+        app:np_min="30"
+        app:np_value="40"
+        app:np_orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/roundTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/round_time"
+        android:textColor="@color/colorTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/roundTimePicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/roundTimePicker" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/vampireCountPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vampireCountText"
+        app:np_textColor="@color/colorTitleDark"
+        app:np_selectedTextColor="@color/colorTitle"
+        app:layout_constraintTop_toBottomOf="@+id/roundTimePicker"
+        app:np_lineSpacingMultiplier="15"
+        app:np_max="5"
+        app:np_min="1"
+        app:np_value="1"
+        app:np_orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/vampireCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vampire_count"
+        android:textColor="@color/colorTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/vampireCountPicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vampireCountPicker" />
+
+    <Button
+        android:id="@+id/createButton"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorDark"
+        android:text="@string/create_game"
+        android:textColor="@color/colorTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vampireCountPicker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

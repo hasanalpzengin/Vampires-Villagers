@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Vampires &amp; Villagers</string>
+    <string name="create_game">Create Game</string>
+    <string name="join_game">Join Game</string>
+    <string name="how_to">How to play ?</string>
+    <string name="credit">Credit</string>
+    <string name="nickname">Nickname</string>
+    <string name="round_time">Round Time</string>
+    <string name="vampire_count">Vampire Count</string>
+    <string name="error_no_nick">You have to choose a nickname</string>
+    <string name="error_server">Error occured while connecting to server</string>
+    <string name="loading">Looking for devices in same network</string>
+    <string name="error_valid_ip">Please enter a valid IP address</string>
+    <string name="hint_connect">Enter IP Address of Server</string>
+    <string name="connect">Connect</string>
+    <string name="votePlayer">Vote player to slay</string>
+    <string name="dead">You are dead!</string>
+    <string name="exit">Exit</string>
+    <string name="day">Day</string>
+    <string name="you_are">You are </string>
+    <string name="villager">Villager</string>
+    <string name="vampire">Vampire</string>
+    <string name="lobby">Lobby</string>
+    <string name="waiting">Waiting for game start</string>
+    <string name="start">Start Game</string>
+    <string name="voted">Vote Sent</string>
+    <string name="draw">Vote Result Draw</string>
+
+    <string name="how_to_text">
+        A new generation card game Vampire &amp; Villagers plays with 3+ amount of players.
+        Each player has a role identified as vampire or villager. Villagers try to detect who is vampire and vote against them to kill.
+        Vampires should hide their via pretend as a villager and at the end of turn vote against villagers to win game.
+        Last role standing wins the game.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
